@@ -84,7 +84,7 @@ export const Careers = () => {
       <section className="container mx-auto max-w-7xl px-4 pt-12">
         <div className="mx-auto max-w-3xl text-center">
           <p className="mb-4 text-sm font-semibold uppercase tracking-[0.18em] text-primary">
-            Careers at EDT
+            Careers at EDN
           </p>
           <h1 className="mb-6 text-4xl font-black md:text-5xl">
             Build AI systems that stop power theft and protect utility revenue.
@@ -101,7 +101,7 @@ export const Careers = () => {
       </section>
 
       <section className="container mx-auto max-w-7xl px-4">
-        <h2 className="mb-12 text-center text-3xl font-bold">Why Join EDT?</h2>
+        <h2 className="mb-12 text-center text-3xl font-bold">Why Join EDN?</h2>
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
           {BENEFITS.map((benefit) => (
             <div
@@ -150,7 +150,7 @@ export const Careers = () => {
               Teams We Are Building
             </p>
             <h2 className="text-3xl font-bold">
-              EDT needs builders across data, product, utility operations, and
+              EDN needs builders across data, product, utility operations, and
               field technology.
             </h2>
           </div>
@@ -243,7 +243,7 @@ export const Careers = () => {
         <div className="rounded-lg bg-primary/10 p-8 text-center md:p-12">
           <h2 className="mb-4 text-3xl font-bold">Have Questions?</h2>
           <p className="mx-auto mb-8 max-w-xl text-muted-foreground">
-            Want to learn more about building with EDT? Reach out and start a
+            Want to learn more about building with EDN? Reach out and start a
             focused conversation about utility intelligence and revenue
             protection.
           </p>

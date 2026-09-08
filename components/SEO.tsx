@@ -12,11 +12,11 @@ interface SEOProps {
 }
 
 const DEFAULT_TITLE =
-  "Energy Data Technology | AI Utility Intelligence for Power Theft Detection";
+  "Energy Data Network | Digital Products for Africa's Energy Future";
 const DEFAULT_DESCRIPTION =
-  "Energy Data Technology (EDT) helps electricity utilities detect power theft, reduce non-technical losses, protect revenue, and strengthen grid reliability with AI-powered utility intelligence.";
+  "Energy Data Network builds simple digital products that help energy companies understand data, improve operations, serve customers and prepare for investment.";
 const DEFAULT_IMAGE = "https://energydatanetwork.com/images/og-image.png";
-const SITE_NAME = "Energy Data Technology";
+const SITE_NAME = "Energy Data Network";
 
 export const SEO = ({
   title,
@@ -107,44 +107,44 @@ export const pageSEO = {
   home: {
     title: undefined, // Uses default
     description:
-      "Energy Data Technology helps electricity providers detect power theft, reduce non-technical losses, and recover lost revenue using AI, smart meter analytics, and utility intelligence.",
+      "Energy Data Network builds digital products for grid intelligence, customer energy services, simulation, GenCo bankability and trusted energy data exchange.",
     keywords:
-      "power theft detection, non-technical losses, revenue protection, utility intelligence, smart meter analytics, electricity theft, AI utilities",
+      "energy data Africa, utility technology, grid intelligence, customer energy services, GenCo bankability, energy data exchange",
   },
   about: {
     title: "About Us",
     description:
-      "Learn how Energy Data Technology builds AI-powered utility intelligence for power theft detection, revenue protection, and non-technical loss reduction.",
+      "Learn how Energy Data Network builds useful digital products for utilities, electricity customers, generation companies and investors across Africa.",
     keywords:
-      "about EDT, utility intelligence company, power theft AI, revenue assurance, Africa utilities",
+      "about EDN, Energy Data Network, energy technology Africa, utility data, energy products",
   },
   products: {
-    title: "Revenue Protection Platform",
+    title: "Energy Technology Products",
     description:
-      "Explore the EDT Revenue Protection Platform for electricity theft detection, customer risk scoring, GIS theft mapping, and inspection prioritization.",
+      "Explore EDN products for utility revenue protection, customer energy services, grid simulation, GenCo bankability and governed energy data exchange.",
     keywords:
-      "revenue protection platform, theft detection engine, customer risk scoring, GIS theft mapping, meter tampering detection",
+      "energy technology products, utility intelligence, EDN Light, GridGuard, digital twin, GenCo bankability, energy data exchange",
   },
   events: {
     title: "Events and Briefings",
     description:
-      "Join EDT product demos, NTL roundtables, AI clinics, and utility intelligence briefings for revenue protection teams.",
+      "Join EDN product demos, energy-data roundtables and industry briefings for energy organizations.",
     keywords:
       "utility intelligence events, revenue protection demo, non-technical losses roundtable, power theft detection briefing",
   },
   blog: {
     title: "Insights",
     description:
-      "Read EDT insights on power theft detection, utility revenue protection, non-technical losses, smart meter analytics, and AI for electricity distribution.",
+      "Read EDN insights on utility intelligence, energy data, customer services, grid operations and energy finance.",
     keywords:
       "utility intelligence insights, power theft detection articles, non-technical losses, smart meter analytics, revenue assurance",
   },
   contact: {
     title: "Contact Us",
     description:
-      "Contact Energy Data Technology to request a demo or discuss power theft detection, revenue protection, and utility intelligence partnerships.",
+      "Contact Energy Data Network to discuss an energy-data product, demo, pilot or project inquiry.",
     keywords:
-      "contact EDT, request demo, utility revenue protection, power theft detection partnership",
+      "contact EDN, energy technology demo, utility products, energy data Africa",
   },
   careers: {
     title: "Careers",

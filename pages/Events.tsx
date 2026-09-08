@@ -66,7 +66,7 @@ export const Events = () => {
               Utility intelligence sessions for revenue protection teams.
             </h1>
             <p className="text-lg leading-relaxed text-muted-foreground">
-              Join EDT product demos, NTL roundtables, AI clinics, and field
+              Join EDN product demos, NTL roundtables, AI clinics, and field
               workflow sessions for utilities working to detect power theft and
               recover lost revenue.
             </p>

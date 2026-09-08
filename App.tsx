@@ -17,6 +17,9 @@ const About = lazy(() =>
 const Products = lazy(() =>
   import("./pages/Products").then((m) => ({ default: m.Products }))
 );
+const ProductDetail = lazy(() =>
+  import("./pages/ProductDetail").then((m) => ({ default: m.ProductDetail }))
+);
 const Events = lazy(() =>
   import("./pages/Events").then((m) => ({ default: m.Events }))
 );
@@ -75,12 +78,13 @@ function App() {
       <RedirectHandler />
       <div className="flex min-h-screen flex-col bg-background text-foreground font-sans">
         <Header />
-        <main className="flex-1">
+        <main className="flex-1 bg-white text-slate-950">
           <Suspense fallback={<PageLoader />}>
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
               <Route path="/products" element={<Products />} />
+              <Route path="/products/:slug" element={<ProductDetail />} />
               <Route path="/events" element={<Events />} />
               <Route path="/blog" element={<Blog />} />
               <Route path="/blog/:slug" element={<BlogPost />} />
