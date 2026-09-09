@@ -1,264 +1,53 @@
-<!DOCTYPE html>
-<html lang="en" class="dark">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- DNS Prefetch & Preconnect for Speed -->
-    <link rel="dns-prefetch" href="https://cdn.sanity.io" />
-    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
-    <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
-    <link rel="preconnect" href="https://cdn.sanity.io" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-    <!-- Preload Critical Resources -->
-    <link rel="preload" href="/index.css" as="style" />
-    <link
-      rel="preload"
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
-      as="style"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
-    />
-
-    <!-- Material Symbols Icons -->
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-    />
-
-    <!-- Primary Meta Tags -->
-    <title>
-      Energy Data Network | Digital Products for Africa's Energy Future
-    </title>
-    <meta
-      name="title"
-      content="Energy Data Network | Digital Products for Africa's Energy Future"
-    />
-    <meta
-      name="description"
-      content="Energy Data Network builds simple digital products that help energy companies understand data, improve operations, serve customers and prepare for investment."
-    />
-    <meta
-      name="keywords"
-      content="energy data Africa, utility technology, grid intelligence, customer energy services, GenCo bankability, energy data exchange"
-    />
-    <meta name="author" content="Energy Data Network" />
-    <meta name="robots" content="index, follow" />
-    <meta name="language" content="English" />
-
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://energydatanetwork.com/" />
-    <meta
-      property="og:title"
-      content="Energy Data Network | Digital Products for Africa's Energy Future"
-    />
-    <meta
-      property="og:description"
-      content="Digital products for utilities, electricity customers, generation companies, investors and energy-sector partners across Africa."
-    />
-    <meta
-      property="og:image"
-      content="https://energydatanetwork.com/images/og-image.png"
-    />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta property="og:site_name" content="Energy Data Network" />
-    <meta property="og:locale" content="en_US" />
-
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:url" content="https://energydatanetwork.com/" />
-    <meta
-      name="twitter:title"
-      content="Energy Data Network | Digital Products for Africa's Energy Future"
-    />
-    <meta
-      name="twitter:description"
-      content="Digital products for utilities, electricity customers, generation companies, investors and energy-sector partners across Africa."
-    />
-    <meta
-      name="twitter:image"
-      content="https://energydatanetwork.com/images/og-image.png"
-    />
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="/logoedn.svg" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/logoedn.svg"
-    />
-    <link
-      rel="icon"
-      type="image/svg+xml"
-      sizes="32x32"
-      href="/logoedn.svg"
-    />
-    <link
-      rel="icon"
-      type="image/svg+xml"
-      sizes="16x16"
-      href="/logoedn.svg"
-    />
-
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://energydatanetwork.com/" />
-
-    <!-- Theme Color -->
-    <meta name="theme-color" content="#19c79c" />
-    <meta name="msapplication-TileColor" content="#0b1726" />
-
-    <!-- Structured Data - Organization -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "Energy Data Network",
-        "alternateName": "EDN",
-        "url": "https://energydatanetwork.com",
-        "logo": "https://energydatanetwork.com/logoedn.svg",
-        "description": "Energy-data company building digital products for utilities, customers, generation companies and financial partners across Africa.",
-        "foundingDate": "2024",
-        "founders": [
-          {
-            "@type": "Person",
-            "name": "Kolade"
-          },
-          {
-            "@type": "Person",
-            "name": "Timi"
-          },
-          {
-            "@type": "Person",
-            "name": "Obafemi"
-          }
-        ],
-        "address": {
-          "@type": "PostalAddress",
-          "addressCountry": "Nigeria"
-        },
-        "sameAs": [
-          "https://twitter.com/energydatanet",
-          "https://www.linkedin.com/company/energy-data-network/",
-          "https://github.com/energydatanetwork"
-        ],
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "contactType": "customer service",
-          "email": "info@energydatanetwork.com"
-        }
-      }
-    </script>
-
-    <!-- Structured Data - Website -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "Energy Data Network",
-        "url": "https://energydatanetwork.com",
-        "potentialAction": {
-          "@type": "SearchAction",
-          "target": "https://energydatanetwork.com/search?q={search_term_string}",
-          "query-input": "required name=search_term_string"
-        }
-      }
-    </script>
-
-    <!-- Fonts - Optimized loading -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap"
-      rel="stylesheet"
-      media="print"
-      onload="this.media='all'"
-    />
-    <noscript>
-      <link
-        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap"
-        rel="stylesheet"
-      />
-    </noscript>
-
-    <!-- CSS Variables for theming -->
-    <style>
-      :root {
-        --background: 195 9% 96%;
-        --foreground: 195 35% 10%;
-        --card: 0 0% 100%;
-        --card-foreground: 195 35% 10%;
-        --popover: 0 0% 100%;
-        --popover-foreground: 195 35% 10%;
-        --primary: 165 78% 44%;
-        --primary-foreground: 195 35% 10%;
-        --secondary: 195 10% 90%;
-        --secondary-foreground: 195 35% 10%;
-        --muted: 195 10% 90%;
-        --muted-foreground: 195 10% 40%;
-        --accent: 195 10% 90%;
-        --accent-foreground: 195 35% 10%;
-        --destructive: 0 84.2% 60.2%;
-        --destructive-foreground: 0 0% 98%;
-        --border: 195 15% 85%;
-        --input: 195 15% 85%;
-        --ring: 165 78% 44%;
-        --radius: 0.5rem;
-      }
-      .dark {
-        --background: 216 45% 8%;
-        --foreground: 0 0% 98%;
-        --card: 216 40% 11%;
-        --card-foreground: 0 0% 98%;
-        --popover: 216 45% 8%;
-        --popover-foreground: 0 0% 98%;
-        --primary: 165 78% 44%;
-        --primary-foreground: 216 45% 8%;
-        --secondary: 195 35% 15%;
-        --secondary-foreground: 0 0% 98%;
-        --muted: 195 35% 15%;
-        --muted-foreground: 195 20% 65%;
-        --accent: 195 35% 15%;
-        --accent-foreground: 0 0% 98%;
-        --destructive: 0 62.8% 30.6%;
-        --destructive-foreground: 0 0% 98%;
-        --border: 195 35% 20%;
-        --input: 195 35% 20%;
-        --ring: 165 78% 44%;
-      }
-      body {
-        font-family: "Space Grotesk", sans-serif;
-      }
-      /* Initial loading skeleton */
-      #root:empty {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        min-height: 100vh;
-        background: #0b1726;
-      }
-      #root:empty::after {
-        content: "";
-        width: 40px;
-        height: 40px;
-        border: 3px solid #19c79c;
-        border-top-color: transparent;
-        border-radius: 50%;
-        animation: spin 1s linear infinite;
-      }
-      @keyframes spin {
-        to {
-          transform: rotate(360deg);
-        }
-      }
-    </style>
-    <link rel="stylesheet" href="/index.css" />
-  </head>
-  <body class="bg-background text-foreground antialiased min-h-screen">
-    <div id="root"></div>
-    <script type="module" src="/index.tsx"></script>
-  </body>
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Energy Data Network | AI-Powered Electricity Infrastructure</title>
+  <meta name="title" content="Energy Data Network | AI-Powered Electricity Infrastructure" />
+  <meta name="description" content="Energy Data Network builds AI-powered infrastructure for electricity access, payments, utility analytics, revenue assurance, and non-technical loss detection." />
+  <meta name="author" content="Energy Data Network" />
+  <meta name="publisher" content="Energy Data Network" />
+  <meta name="application-name" content="Energy Data Network" />
+  <meta name="apple-mobile-web-app-title" content="Energy Data Network" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://energydatanetwork.com/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Energy Data Network" />
+  <meta property="og:url" content="https://energydatanetwork.com/" />
+  <meta property="og:title" content="Energy Data Network | AI-Powered Electricity Infrastructure" />
+  <meta property="og:description" content="Energy Data Network builds AI-powered infrastructure for electricity access, payments, utility analytics, revenue assurance, and non-technical loss detection." />
+  <meta property="og:image" content="https://energydatanetwork.com/logoedn.svg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Energy Data Network | AI-Powered Electricity Infrastructure" />
+  <meta name="twitter:description" content="Energy Data Network builds AI-powered infrastructure for electricity access, payments, utility analytics, revenue assurance, and non-technical loss detection." />
+  <meta name="twitter:image" content="https://energydatanetwork.com/logoedn.svg" />
+  <link rel="icon" type="image/svg+xml" href="/logoedn.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Material+Symbols+Outlined&amp;display=swap" />
+  <meta name="theme-color" content="#ffffff" />
+  <script type="application/ld+json">{
+    "@context":"https://schema.org",
+    "@type":"Organization",
+    "name":"Energy Data Network",
+    "alternateName":"EDN",
+    "url":"https://energydatanetwork.com/",
+    "logo":"https://energydatanetwork.com/logoedn.svg",
+    "description":"Energy Data Network (EDN) is building AI-powered digital infrastructure for Africa’s electricity sector. Its initial product, EDN Light, supports electricity access, payments, subscriptions, and transfers, while its utility-facing tools support revenue assurance, non-technical loss detection, operational analytics, and secure integrations with DisCos and licensed energy-service providers.",
+    "email":"info@energydatanetwork.com",
+    "address":{"@type":"PostalAddress","addressLocality":"Lagos","addressCountry":"NG"},
+    "sameAs":["https://www.linkedin.com/company/energy-data-network/"]
+  }</script>
+  <style>body{margin:0;font-family:Manrope,Arial,sans-serif;color:#0f172a}#root>article{max-width:72rem;margin:auto;padding:3rem 1.5rem}a{color:#047857}</style>
+  <link rel="stylesheet" href="/index.css" />
+</head>
+<body>
+  <div id="root"><article><header><img src="/logoedn.svg" alt="Energy Data Network" width="72" height="72"><nav><a href="/about">About</a> · <a href="/products">Products</a> · <a href="/contact">Contact</a></nav></header><main><h1>AI-powered electricity infrastructure for Africa</h1><p>Energy Data Network (EDN) is building AI-powered digital infrastructure for Africa’s electricity sector. Its initial product, EDN Light, supports electricity access, payments, subscriptions, and transfers, while its utility-facing tools support revenue assurance, non-technical loss detection, operational analytics, and secure integrations with DisCos and licensed energy-service providers.</p><h2>Products for everyday electricity needs</h2><p>EDN Light helps people access, pay for, subscribe to and transfer electricity services. Our tools also help electricity providers understand losses, improve operations and connect trusted systems.</p><p><a href="/products/edn-light">Explore EDN Light</a> · <a href="/products">View all products</a> · <a href="/contact?product=General%20inquiry">Talk to EDN</a></p></main><footer><p>Lagos, Nigeria · <a href="mailto:info@energydatanetwork.com">info@energydatanetwork.com</a></p><p><a href="/privacy">Privacy Policy</a> · <a href="/terms">Terms of Use</a></p><p>© 2026 Energy Data Network. All rights reserved.</p></footer></article></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
 </html>
+
+
+

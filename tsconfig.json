@@ -1,5 +1,6 @@
 {
   "include": ["**/*.ts", "**/*.tsx", "vite-env.d.ts"],
+  "exclude": ["dist", "node_modules", "studio-edn_blog"],
   "compilerOptions": {
     "target": "ES2022",
     "experimentalDecorators": true,
@@ -13,9 +14,7 @@
     "moduleDetection": "force",
     "allowJs": true,
     "jsx": "react-jsx",
-    "paths": {
-      "@/*": ["./*"]
-    },
+    "paths": { "@/*": ["./*"] },
     "allowImportingTsExtensions": true,
     "noEmit": true
   }

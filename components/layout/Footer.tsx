@@ -15,10 +15,8 @@ export const Footer = () => {
                 height={80}
               />
             </div>
-            <p className="text-sm text-muted-foreground">
-              AI-powered utility intelligence for power theft detection and
-              revenue protection.
-            </p>
+            <p className="text-sm text-muted-foreground">AI-powered infrastructure for electricity access, payments and better everyday decisions.</p>
+            <a href="mailto:info@energydatanetwork.com" className="mt-3 text-sm text-primary hover:underline">info@energydatanetwork.com</a>
           </div>
 
           <div>
@@ -32,6 +30,9 @@ export const Footer = () => {
                   About Us
                 </Link>
               </li>
+              <li><Link to="/privacy" className="transition-colors hover:text-primary">Privacy Policy</Link></li>
+              <li><Link to="/terms" className="transition-colors hover:text-primary">Terms of Use</Link></li>
+              <li><button type="button" onClick={() => window.dispatchEvent(new Event("edn:open-cookie-settings"))} className="transition-colors hover:text-primary">Cookie settings</button></li>
               <li>
                 <Link
                   to="/products"
@@ -105,8 +106,7 @@ export const Footer = () => {
 
         <div className="mt-8 border-t border-white/10 pt-8 text-center text-sm text-muted-foreground">
           <p>
-            &copy; {new Date().getFullYear()} Energy Data Network. All rights
-            reserved.
+            &copy; 2026 Energy Data Network. All rights reserved.
           </p>
         </div>
       </div>

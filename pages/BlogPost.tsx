@@ -346,7 +346,7 @@ export const BlogPost = () => {
         title={post.title}
         description={
           post.excerpt ||
-          `Read "${post.title}" from Energy Data Technology.`
+          `Read "${post.title}" from Energy Data Network.`
         }
         keywords={`${
           post.categories?.map((c) => c.title).join(", ") || ""

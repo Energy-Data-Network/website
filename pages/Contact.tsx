@@ -161,13 +161,6 @@ export const Contact = () => {
               <h3 className="mb-4 text-lg font-bold">Follow Us</h3>
               <div className="flex gap-4">
                 <a
-                  href="#"
-                  aria-label="X"
-                  className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 transition-colors hover:bg-primary hover:text-background"
-                >
-                  <span className="text-sm font-bold">X</span>
-                </a>
-                <a
                   href="https://www.linkedin.com/company/energy-data-network/"
                   target="_blank"
                   rel="noreferrer"
@@ -175,13 +168,6 @@ export const Contact = () => {
                   className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 transition-colors hover:bg-primary hover:text-background"
                 >
                   <span className="text-sm font-bold">in</span>
-                </a>
-                <a
-                  href="#"
-                  aria-label="GitHub"
-                  className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 transition-colors hover:bg-primary hover:text-background"
-                >
-                  <span className="text-sm font-bold">GH</span>
                 </a>
               </div>
             </div>

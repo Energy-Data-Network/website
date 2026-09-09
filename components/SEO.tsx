@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+﻿import { useEffect } from "react";
 
 interface SEOProps {
   title?: string;
@@ -12,10 +12,10 @@ interface SEOProps {
 }
 
 const DEFAULT_TITLE =
-  "Energy Data Network | Digital Products for Africa's Energy Future";
+  "Energy Data Network | AI-Powered Electricity Infrastructure";
 const DEFAULT_DESCRIPTION =
-  "Energy Data Network builds simple digital products that help energy companies understand data, improve operations, serve customers and prepare for investment.";
-const DEFAULT_IMAGE = "https://energydatanetwork.com/images/og-image.png";
+  "Energy Data Network builds AI-powered infrastructure for electricity access, payments, utility analytics, revenue assurance, and non-technical loss detection.";
+const DEFAULT_IMAGE = "https://energydatanetwork.com/logoedn.svg";
 const SITE_NAME = "Energy Data Network";
 
 export const SEO = ({
@@ -29,6 +29,7 @@ export const SEO = ({
   publishedTime,
 }: SEOProps) => {
   const fullTitle = title ? `${title} | ${SITE_NAME}` : DEFAULT_TITLE;
+  const canonicalUrl = url ?? `https://energydatanetwork.com${window.location.pathname === "/" ? "/" : window.location.pathname}`;
 
   useEffect(() => {
     // Update document title
@@ -53,6 +54,10 @@ export const SEO = ({
 
     // Update meta description
     updateMetaTag("name", "description", description);
+    updateMetaTag("name", "author", SITE_NAME);
+    updateMetaTag("name", "publisher", SITE_NAME);
+    updateMetaTag("name", "application-name", SITE_NAME);
+    updateMetaTag("name", "apple-mobile-web-app-title", SITE_NAME);
 
     // Update keywords if provided
     if (keywords) {
@@ -64,9 +69,15 @@ export const SEO = ({
     updateMetaTag("property", "og:description", description);
     updateMetaTag("property", "og:image", image);
     updateMetaTag("property", "og:type", type);
-    if (url) {
-      updateMetaTag("property", "og:url", url);
+    updateMetaTag("property", "og:url", canonicalUrl);
+    updateMetaTag("name", "twitter:url", canonicalUrl);
+    let canonical = document.querySelector('link[rel="canonical"]');
+    if (!canonical) {
+      canonical = document.createElement("link");
+      canonical.setAttribute("rel", "canonical");
+      document.head.appendChild(canonical);
     }
+    canonical.setAttribute("href", canonicalUrl);
 
     // Update Twitter tags
     updateMetaTag("name", "twitter:title", fullTitle);
@@ -93,7 +104,7 @@ export const SEO = ({
     description,
     keywords,
     image,
-    url,
+    canonicalUrl,
     type,
     author,
     publishedTime,
@@ -107,7 +118,7 @@ export const pageSEO = {
   home: {
     title: undefined, // Uses default
     description:
-      "Energy Data Network builds digital products for grid intelligence, customer energy services, simulation, GenCo bankability and trusted energy data exchange.",
+      "Energy Data Network builds AI-powered infrastructure for electricity access, payments, utility analytics, revenue assurance, and non-technical loss detection.",
     keywords:
       "energy data Africa, utility technology, grid intelligence, customer energy services, GenCo bankability, energy data exchange",
   },
@@ -149,8 +160,13 @@ export const pageSEO = {
   careers: {
     title: "Careers",
     description:
-      "Join Energy Data Technology and help build AI systems for power theft detection, non-technical loss reduction, utility analytics, and revenue protection.",
+      "Join Energy Data Network and help build AI-powered infrastructure for electricity access, utility analytics, revenue assurance, and loss detection.",
     keywords:
       "utility analytics careers, AI energy jobs, power theft detection jobs, revenue assurance careers, GIS utility jobs",
   },
+  privacy: { title: "Privacy Policy", description: "How Energy Data Network handles information shared through its website and product enquiries." },
+  terms: { title: "Terms of Use", description: "Terms for using the Energy Data Network website and contacting us about our products." },
 };
+
+
+

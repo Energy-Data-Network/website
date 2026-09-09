@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import { Header } from "./components/layout/Header";
 import { Footer } from "./components/layout/Footer";
+import { CookieConsent } from "./components/CookieConsent";
 import { Home } from "./pages/Home";
 import { lazy, Suspense, useEffect } from "react";
 
@@ -35,6 +36,8 @@ const Contact = lazy(() =>
 const Careers = lazy(() =>
   import("./pages/Careers").then((m) => ({ default: m.Careers }))
 );
+const Privacy = lazy(() => import("./pages/Privacy").then((m) => ({ default: m.Privacy })));
+const Terms = lazy(() => import("./pages/Terms").then((m) => ({ default: m.Terms })));
 
 // Loading spinner for lazy-loaded pages
 const PageLoader = () => (
@@ -90,12 +93,15 @@ function App() {
               <Route path="/blog/:slug" element={<BlogPost />} />
               <Route path="/careers" element={<Careers />} />
               <Route path="/contact" element={<Contact />} />
+              <Route path="/privacy" element={<Privacy />} />
+              <Route path="/terms" element={<Terms />} />
               {/* Catch-all route for 404 */}
               <Route path="*" element={<Home />} />
             </Routes>
           </Suspense>
         </main>
         <Footer />
+        <CookieConsent />
       </div>
     </BrowserRouter>
   );

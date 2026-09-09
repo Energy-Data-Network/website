@@ -1,4 +1,4 @@
-export type Product = {
+﻿export type Product = {
   slug: string; name: string; eyebrow: string; category: string; status: string;
   icon: string; image: string; headline: string; summary: string; audience: string[]; outcomes: string[];
   capabilities: { title: string; description: string }[];
@@ -29,7 +29,7 @@ export const products: Product[] = [
     slug: "edn-light", name: "EDN Light", eyebrow: "Everyday electricity services",
     category: "For people who use electricity", status: "Being connected to providers", icon: "bolt", image: "/images/products/edn-light.jpg",
     headline: "A simpler way for customers to manage, buy and share electricity.",
-    summary: "EDN Light is an app for checking a meter, seeing electricity use, buying electricity, sending electricity to someone else and keeping every receipt in one place.",
+    summary: "EDN Light is an app for checking a meter, seeing electricity use, paying for electricity, sending electricity to someone else and keeping every receipt in one place. Licensed payment and vending providers complete regulated transactions through approved connections.",
     audience: ["Homes", "Small businesses", "Electricity companies", "Community power providers"],
     outcomes: ["One customer view of meter and energy activity", "Faster, clearer top-up journeys", "Transparent receipts and transaction history", "Provider-ready customer service channels"],
     capabilities: [
@@ -104,3 +104,4 @@ export const products: Product[] = [
 ];
 
 export const getProduct = (slug: string | undefined) => products.find((product) => product.slug === slug);
+
